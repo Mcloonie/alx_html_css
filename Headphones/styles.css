@@ -1,0 +1,49 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --main-color: #FF6565;
+    --text-color: #333;
+}
+
+/* Header Styles */
+.hero {
+    background-image: url('path/to/hero-image.jpg');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Hover Effects */
+.nav a:hover {
+    color: var(--main-color);
+}

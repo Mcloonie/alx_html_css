@@ -1,0 +1,53 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --main-color: #6589ff;
+    --text-color: #f5ededf5;
+}
+
+/* Header Styles */
+.hero {
+    background-image: url('Headphones/images/headphones_hero_1.jpg');
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+    align-items: flex-start;   /* Aligns items to the top */
+    padding: 20px;             /* Adds some padding to the top right */
+}
+
+.container {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center;            /* Center items vertically */
+}
+
+.logo {
+    height: 40px;
+    margin-right: auto;            /* Pushes nav to the right */
+    border-radius: 10px; /* Rounded corners */
+    
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;                     /* Space between nav items */
+}
+
+.nav a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Hover Effects */
+.nav a:hover {
+    color: var(--main-color);
+}
