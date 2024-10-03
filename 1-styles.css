@@ -1,0 +1,63 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --main-color: #FF5658;
+    --text-color: rgba(253, 245, 245, 0.747);
+}
+
+/* What We Do Section Styles */
+.what-we-do {
+    padding: 50px 0; /* Spacing around the section */
+    background-color: rgba(5, 82, 82, 0.5); /* Semi-transparent background */
+}
+
+.what-we-do .container {
+    max-width: 1000px;
+    margin: 0 auto; /* Center the section */
+    text-align: center; /* Center text */
+}
+
+.what-we-do h1 {
+    font-size: 2em; /* Adjusted for visibility */
+    margin-top: 30px; /* Space above the heading */
+    margin-bottom: 30px; /* Space below the heading */
+    text-align: center; /* Center the heading */
+    color: var(--text-color); /* Use text color variable */
+}
+
+.services {
+    display: flex;
+    justify-content: space-between; /* Adjust space between services */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+.service {
+    flex: 1 1 30%; /* Flexible basis with minimum size */
+    margin: 10px; /* Space around each box */
+    background: rgb(137, 124, 194); /* Background color for service boxes */
+    padding: 20px; /* Padding inside service boxes */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center text inside service boxes */
+}
+
+.icon {
+    font-size: 40px; /* Icon size */
+    color: var(--main-color); /* Use main color */
+    margin-bottom: 15px; /* Space below icon */
+}
+
+.service h3 {
+    margin: 10px 0; /* Space around service title */
+    font-size: 1.2em; /* Adjust font size for service titles */
+}
+
+.service p {
+    color: #070707; /* Grey text for descriptions */
+}

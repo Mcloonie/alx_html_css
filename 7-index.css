@@ -1,0 +1,283 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --main-color: #b69899; /* Updated main color */
+    --text-color: rgb(12, 12, 12); /* Text color */
+}
+
+/* What We Do Section Styles */
+.what-we-do {
+    padding: 50px 0; /* Spacing around the section */
+    background-color: rgba(48, 36, 24, 0.5); /* Semi-transparent background */
+}
+
+.what-we-do .container {
+    max-width: 1000px; /* Maximum width for the content */
+    margin: 0 auto; /* Center the section */
+    text-align: center; /* Center text */
+}
+
+.what-we-do h1 {
+    font-size: 2em; /* Font size for the main heading */
+    margin-top: 30px; /* Space above the heading */
+    margin-bottom: 30px; /* Space below the heading */
+    color: var(--text-color); /* Text color */
+}
+
+.services {
+    display: flex;
+    justify-content: space-between; /* Space between services */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+.service {
+    flex: 1 1 30%; /* Flexible width for service boxes */
+    margin: 10px; /* Space around each box */
+    background: var(--main-color); /* Background color for service boxes */
+    padding: 20px; /* Padding inside service boxes */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center text inside service boxes */
+}
+
+.icon {
+    font-size: 40px; /* Icon size */
+    color: white; /* Change icon color for contrast */
+    margin-bottom: 15px; /* Space below icon */
+}
+
+.service h3 {
+    margin: 10px 0; /* Space around service title */
+    color: var(--text-color); /* Service title color */
+}
+
+.service p {
+    color: #070707; /* Text color for descriptions */
+}
+
+
+/* Our Results Section Styles */
+.our-results {
+    padding: 50px 0; /* Spacing around the section */
+    background-color: rgba(109, 64, 64, 0.9); /* Light background */
+}
+
+.our-results .container {
+    max-width: 1000px; /* Max width for the content */
+    margin: 0 auto; /* Center the section */
+    text-align: center; /* Center text */
+}
+
+.our-results h2 {
+    font-size: 2em; /* Heading size */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+/* Pentagon styles */
+.pentagons {
+    display: flex; /* Flex container for pentagons */
+    justify-content: space-around; /* Space out pentagons */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.pentagon {
+    width: 100px; /* Width of the pentagon */
+    height: 100px; /* Height of the pentagon */
+    background-color: var(--main-color, #FF5658); /* Color of the pentagon */
+    position: relative; /* For positioning pseudo-elements */
+    margin: 20px; /* Margin around each pentagon */
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); /* Create pentagon shape */
+    display: flex; /* Flexbox for centering text */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    color: rgb(136, 86, 86); /* Text color */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center text */
+}
+
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    transition: border 0.3s; /* Transition effect */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border: 1px solid var(--main-color); /* Change border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.submit-btn {
+    background-color: var(--main-color); /* Use main color */
+    color: rgb(112, 55, 55); /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.submit-btn:hover {
+    background-color: darken(var(--main-color), 10%); /* Darken on hover */
+}
+/* Footer Styles */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    padding: 20px 0; /* Spacing around the footer */
+    text-align: center; /* Center text */
+}
+
+.footer .container {
+    max-width: 1000px; /* Max width for the content */
+    margin: 0 auto; /* Center the footer */
+}
+
+.footer p {
+    margin: 10px 0; /* Space above and below the paragraph */
+}
+
+.social-icons {
+    margin-top: 10px; /* Space above social icons */
+}
+
+.social-icon {
+    color: white; /* White text color */
+    text-decoration: none; /* No underline */
+    margin: 0 10px; /* Space between icons */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.social-icon:hover {
+    color: var(--main-color); /* Change color on hover */
+}
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --main-color: #b69899; /* Updated main color */
+    --text-color: rgb(12, 12, 12); /* Text color */
+}
+/* Animation for service items */
+.service {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for scale and opacity */
+    opacity: 0.8; /* Slightly transparent */
+}
+
+.service:hover {
+    transform: scale(1.1) rotate(3deg); /* Scale and rotate on hover */
+    opacity: 1; /* Fully opaque */
+}
+
+/* Animation for pentagons */
+.pentagon {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for scale and opacity */
+    opacity: 0.8; /* Slightly transparent */
+}
+
+.pentagon:hover {
+    transform: scale(1.1) rotate(5deg); /* Scale and rotate on hover */
+    opacity: 1; /* Fully opaque */
+}
+
+/* Adding keyframes for bouncing effect */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Apply bounce animation on load */
+.service, .pentagon {
+    animation: bounce 6s ease forwards; /* Start with a bounce effect */
+}
+
+
+
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    transition: border 0.3s; /* Transition effect */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border: 1px solid var(--main-color); /* Change border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.submit-btn {
+    background-color: var(--main-color); /* Use main color */
+    color: rgb(112, 55, 55); /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.submit-btn:hover {
+    background-color: darken(var(--main-color), 10%); /* Darken on hover */
+}
+/* Footer Styles */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    padding: 20px 0; /* Spacing around the footer */
+    text-align: center; /* Center text */
+}
+
+.footer .container {
+    max-width: 1000px; /* Max width for the content */
+    margin: 0 auto; /* Center the footer */
+}
+
+.footer p {
+    margin: 10px 0; /* Space above and below the paragraph */
+}
+
+.social-icons {
+    margin-top: 10px; /* Space above social icons */
+}
+
+.social-icon {
+    color: white; /* White text color */
+    text-decoration: none; /* No underline */
+    margin: 0 10px; /* Space between icons */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.social-icon:hover {
+    color: var(--main-color); /* Change color on hover */
+}

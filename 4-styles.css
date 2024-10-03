@@ -1,0 +1,195 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --main-color: #b69899; /* Updated main color */
+    --text-color: rgb(12, 12, 12); /* Text color */
+}
+
+/* What We Do Section Styles */
+.what-we-do {
+    padding: 50px 0; /* Spacing around the section */
+    background-color: rgba(48, 36, 24, 0.5); /* Semi-transparent background */
+}
+
+.what-we-do .container {
+    max-width: 1000px; /* Maximum width for the content */
+    margin: 0 auto; /* Center the section */
+    text-align: center; /* Center text */
+}
+
+.what-we-do h1 {
+    font-size: 2em; /* Font size for the main heading */
+    margin-top: 30px; /* Space above the heading */
+    margin-bottom: 30px; /* Space below the heading */
+    color: var(--text-color); /* Text color */
+}
+
+.services {
+    display: flex;
+    justify-content: space-between; /* Space between services */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+.service {
+    flex: 1 1 30%; /* Flexible width for service boxes */
+    margin: 10px; /* Space around each box */
+    background: var(--main-color); /* Background color for service boxes */
+    padding: 20px; /* Padding inside service boxes */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center text inside service boxes */
+}
+
+.icon {
+    font-size: 40px; /* Icon size */
+    color: white; /* Change icon color for contrast */
+    margin-bottom: 15px; /* Space below icon */
+}
+
+.service h3 {
+    margin: 10px 0; /* Space around service title */
+    color: var(--text-color); /* Service title color */
+}
+
+.service p {
+    color: #070707; /* Text color for descriptions */
+}
+
+
+.results {
+    
+    padding: 40px 20px;
+    background-color: #ad9d9d; /* Change this to match your design */
+    text-align: center;
+}
+
+.results h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column; /* Change to row for horizontal layout */
+    gap: 20px; /* Spacing between result items */
+}
+
+.result-item {
+    background: #5a3535; /* Card background color */
+    border: 1px solid #924c4c; /* Border style */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.result-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.result-item p {
+    font-size: 1em;
+    color: #f8f5f5; /* Text color */
+
+}
+
+/* Contact Us Section Styles */
+.contact-us {
+    padding: 50px 0; /* Spacing around the section */
+    background-color: rgba(11, 83, 17, 0.377); /* Light background */
+}
+
+.contact-us .container {
+    max-width: 600px; /* Max width for the form */
+    margin: 0 auto; /* Center the section */
+    text-align: center; /* Center text */
+}
+
+.contact-us h2 {
+    font-size: 2em; /* Heading size */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 15px; /* Space between form elements */
+}
+
+.form-group {
+    text-align: left; /* Align label and inputs */
+}
+
+.form-group label {
+    display: block; /* Make label take full width */
+    margin-bottom: 5px; /* Space below label */
+    font-weight: bold; /* Bold text for labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    transition: border 0.3s; /* Transition effect */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border: 1px solid var(--main-color); /* Change border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.submit-btn {
+    background-color: var(--main-color); /* Use main color */
+    color: rgb(112, 55, 55); /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.submit-btn:hover {
+    background-color: darken(var(--main-color), 10%); /* Darken on hover */
+}
+/* Footer Styles */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    padding: 20px 0; /* Spacing around the footer */
+    text-align: center; /* Center text */
+}
+
+.footer .container {
+    max-width: 1000px; /* Max width for the content */
+    margin: 0 auto; /* Center the footer */
+}
+
+.footer p {
+    margin: 10px 0; /* Space above and below the paragraph */
+}
+
+.social-icons {
+    margin-top: 10px; /* Space above social icons */
+}
+
+.social-icon {
+    color: white; /* White text color */
+    text-decoration: none; /* No underline */
+    margin: 0 10px; /* Space between icons */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.social-icon:hover {
+    color: var(--main-color); /* Change color on hover */
+}
